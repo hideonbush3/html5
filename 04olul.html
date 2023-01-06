@@ -2,9 +2,143 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>목록관련 태그</title>
 </head>
 <body>
+  <h1>목록 list 관련 태그</h1>
+  <h2>개요</h2>
+  <p>깔끔한 정보전달을 위해 여러 요소들을 일렬로 나열한 명단이나 목록을 의미</p>
+  <p>html에서는 목록을 표현하기 위해
+    순서없는 목록, 순서있는 목록, 정의목록 등을 지원해요</p>
 
+  <h2>순서없는 목록 (unordered list)</h2>
+  <p>명단의 요소를 기호로 나타내는 목록의 형태</p>
+  <p>ul, li태그등을 이용해서 표현</p>
+  <p>목록에 사용가능한 기호는 circle, square, disc 등이 있음</p>
+
+  <p>내가 좋아하는 점심메뉴</p>
+  <ul>
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ul>
+  <ul type="square">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ul>
+  <ul style="list-style-type: circle">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ul>
+  <ul style="list-style-type: square">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ul>
+  <ul style="list-style-type: disc">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ul>
+
+  <h2>순서있는 목록 (ordered list)</h2>
+  <p>명단의 요소를 순서가 있는 기호로 나타내는 목록의 형태</p>
+  <p>ol, li태그등을 이용해서 표현</p>
+  <p>목록에 사용가능한 기호는 decimal, alpha, roman 등이 있음</p>
+
+  <p>내가 좋아하는 점심메뉴</p>
+  <ol style="list-style-type: decimal">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ol>
+<ol style="list-style-type: lower-alpha">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ol>
+  <ol style="list-style-type: upper-roman">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ol>
+  <!-- 한글 글머리 기호 : hangul, -moz-hangul -->
+  <ol style="list-style-type: hangul">
+    <li>라면</li>
+    <li>돈가스</li>
+    <li>김밥</li>
+  </ol>
+
+  <h2>정의 목록 (definition list)</h2>
+  <p>용어와 그 용어에 대한 해설을 모아놓은 목록</p>
+  <p>dl태그로 목록의 시작을, dt태그로 용어의 이름을,
+    dd태그로 해당 용어에 대한 해설을 작성</p>
+
+  <h3>웹표준 용어</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>웹 사이트를 구성하는 웹 문서 작성에
+      사용하는 마크업 언어</dd>
+
+    <dt>CSS</dt>
+    <dd>html로 작성된 문서를 시각적으로 꾸밀때 사용</dd>
+
+    <dt>javascript</dt>
+    <dd>html에 사용하는 객체기반
+      스크립트 프로그래밍 언어</dd>
+  </dl>
+
+  <h2>목록 중첩 (nested)</h2>
+  <p>목록을 구성하는 요소들을 구조화(structured)된
+    정보형태로 나타낼 때 주로 사용</p>
+
+  <p>내가 좋아하는 음식</p>
+
+  <ul>
+
+    <li>분식
+      <ul>
+        <li>라면
+          <ol>
+            <li>너구리</li>
+            <li>신라면
+              <ul>
+                <li>신라면 블랙</li>
+                <li>신라면 컵
+                  <ul>
+                    <li>대컵</li>
+                    <li>소컵</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>김밥</li>
+      </ul>
+    </li>
+
+    <li>중식
+      <ul>
+        <li>초밥</li>
+        <li>김치</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>네비게이션 구조 작성시 목록 사용</h2>
+  <p>웹페이지의 gnb, lnb, fnb를 만들때 생성</p>
+
+  <h2>네이버 뉴스 gnb</h2>
+    <nav>
+      <ul>
+        <li><a href="https://news.naver.com/?viewType=pc">언론사별</a> </li>
+        <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=100">정치</a> </li>
+        <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101">경제</a> </li>
+        <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=102">사회</a></li>
+      </ul>
+    </nav>
 </body>
 </html>
