@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>링크 관련 태그</title>
+</head>
+<body>
+    <h1>링크 관련 태그</h1>
+    <a id="top"></a>    <!--책갈피-->
+    <h2>개요</h2>
+    <p>현재 페이지에서 다른 페이지나 다른 사이트로
+        연결되도록 만드는 요소</p>
+    <p>이러한 요소를 하이퍼링크라 하며 간단히 링크라고 함</p>
+    <p>html에서는 a 태그를 이용해서 이것을 만들 수 있는데
+        href 속성으로 문서내 특정 위치, 연결할 다른 페이지나
+        외부사이트를 지정할 수 있음</p>
+    <p>a 태그 사이에는 링크를 설명할 텍스트를 작성함</p>
+    <p>링크의 기본색상은 파란색, 클릭을 하고나면 보라색으로 바뀜</p>
+    <p>링크를 누르고있을때 색상은 빨간색으로 표시</p>
+    <p>이러한 색상들은 CSS를 이용해 다르게 보이게 할 수 있음</p>
+    <div><a href="http://www.naver.com">네이버</a></div>
+    <div><a href="http://www.google.com">구글</a></div>
+    <div><a href="http://www.youtube.com">유튜브</a></div>
+    <div><a href="http://www.daum.net">다음</a></div>
+    <div><a href="http://localhost:63342/html5/01text.html">어제 수업한 01text</a></div> <!--절대주소-->
+    <div><a href="01text.html">어제 수업한 01text</a></div>  <!--상대주소-->
+
+    <h2>문서 내 특정 위치로 이동</h2>
+    <p>링크를 책갈피로도 생성할 수 있는데,
+        id라는 속성으로 책갈피를 지정하고,
+        href 속성에 '&sharp; 책갈피이름'을 지정하면
+        문서내 만들어둔 특정위치로 이동할 수 있음</p>
+    <p>또한, href 속성에 '파일명 &sharp;책갈피이름'을 지정하면
+        특정 문서의 책갈피로 이동할 수 있다</p>
+    <div><a href="#top"> 문서 최상단으로</a></div>
+    <div><a href="01text.html#er">01text의 entity reference로</a></div>
+
+    <h2>링크로 메일보내기</h2>
+    <p>href 속성에 mailto:이메일주소 라는 링크를 생성하면
+    이메일 클라이언트를 실행하거나
+    메일로 보낼 내용을 작성할 수 있음</p>
+    <div><a>관리자에게 메일 보내기</a></div>
+    <a href="mailto:ppoii0961@naver.com">나에게 메일보내기</a>
+<hr>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+<hr>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+</body>
+</html>
